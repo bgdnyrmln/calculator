@@ -1,0 +1,86 @@
+body{
+    background-color: rgb(132, 79, 79);
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+}
+
+.container{
+    width: 50vh;
+    height: 80vh;
+    margin: 0 auto;
+    padding: 1vh;
+    justify-content: center;
+    background-color: rgb(48, 48, 48);
+    border-radius: 10px;
+}   
+
+.calculator{
+    width: 48vh;
+    height: 78vh;
+    padding: 1vh;
+    border-radius: 10px;
+    background-color: rgb(116, 114, 114);
+    justify-content: center;
+}
+
+.screen{
+    margin-top: 5vh;
+    width: 46vh;
+    height: 5vh;
+    padding: 1vh;
+    border-radius: 10px;
+    background-color: rgb(140, 169, 144);
+}
+
+.sunpanel{
+    width: 20vh;
+    height: 5vh;
+    padding: 1vh;
+    border-radius: 10px;
+    background-color: rgb(33, 30, 30);
+    color: rgb(109, 104, 104);
+    font-size: 30px;
+    letter-spacing: 27px;
+}
+
+.calcname{
+    padding: 1vh;
+    color: white;
+}
+
+.upscreen{
+    height: 5vh;
+    justify-content: center;
+    display: flex;
+}
+
+.buttons{
+    width: 46vh;
+    height: 60vh;
+    padding: 1vh;
+    border-radius: 10px;
+    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1vh;
+    margin-top: 2vh;
+}
+
+.button{
+    width: 9vh;
+    height: 9vh;
+    padding: 1vh;
+    border-radius: 10px;
+    background-color: rgb(166, 179, 168);
+    color: rgb(32, 31, 31);
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.button:hover{
+    background-color: rgb(178, 176, 176);
+}
+
+.button:active{
+    background-color: rgb(140, 140, 140);
+}
