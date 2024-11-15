@@ -18,32 +18,34 @@
                 </div>
             </div>
 
-            <div class = 'screen'>
+            <div class = 'screen' id="screen">
             </div>
 
             <div class = 'buttons'>
-                <div class = 'button'>1</div>
-                <div class = 'button'>2</div>
-                <div class = 'button'>3</div>
-                <div class = 'button' style="background-color: brown;">AC</div>
-                <div class = 'button'>4</div>
-                <div class = 'button'>5</div>
-                <div class = 'button'>6</div>
-                <div class = 'button'>+</div>
-                <div class = 'button'>7</div>
-                <div class = 'button'>8</div>
-                <div class = 'button'>9</div>
-                <div class = 'button'>-</div>
-                <div class = 'button'>0</div>
-                <div class = 'button'>×</div><div class = 'button'>÷</div>
-                <div class = 'button' style="background-color: rgb(146, 141, 141);">=</div>
+                <div class = 'button' id="1" onclick = appendnumber(1)>1</div>
+                <div class = 'button' id="2" onclick = appendnumber(2)>2</div>
+                <div class = 'button' id="3" onclick = appendnumber(3)>3</div>
+                <div class = 'button' id="clear" onclick = clearscreen()>AC</div>
+                <div class = 'button' id="4" onclick = appendnumber(4)>4</div>
+                <div class = 'button' id="5" onclick = appendnumber(5)>5</div>
+                <div class = 'button' id="6" onclick = appendnumber(6)>6</div>
+                <div class = 'button' id="add" onclick = add()>+</div>
+                <div class = 'button' id="7" onclick = appendnumber(7)>7</div>
+                <div class = 'button' id="8" onclick = appendnumber(8)>8</div>
+                <div class = 'button' id="9" onclick = appendnumber(9)>9</div>
+                <div class = 'button' id="subtract" onclick = subtract()>-</div>
+                <div class = 'button' id="0" onclick = appendnumber(0)>0</div>
+                <div class = 'button' id="multiply" onclick = multiply()>×</div>
+                <div class = 'button' id="divide" onclick = divide()>÷</div>
+                <div class = 'button' id="equals" onclick = calculate()>=</div>
             </div>
         </div> 
     </div>
     <div class = 'container'>
         <div class = 'calculator'>
             <div class="upscreen"><H1>History</H1></div>
-            
+            <div class="history" id="history">
+            </div>
         </div>
     </div>
     <script src = 'script.js'></script>

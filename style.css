@@ -30,6 +30,8 @@ body{
     padding: 1vh;
     border-radius: 10px;
     background-color: rgb(140, 169, 144);
+    display: flex;
+    justify-content: flex-end;
 }
 
 .sunpanel{
@@ -75,6 +77,11 @@ body{
     color: rgb(32, 31, 31);
     font-size: 30px;
     cursor: pointer;
+}
+
+button.clear{
+    background-color: rgb(0, 0, 0);
+    color: white;
 }
 
 .button:hover{
