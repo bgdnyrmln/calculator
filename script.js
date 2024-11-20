@@ -12,7 +12,7 @@ function calculate() {
     var result = eval(screen);
     history += "=" + result;
     document.getElementById("screen").innerHTML = result;
-    document.getElementById("history").innerHTML = history;
+    document.getElementById("history").innerHTML += '\n' + history;
 }
 
 function add() {
