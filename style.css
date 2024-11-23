@@ -100,16 +100,46 @@ button.clear{
     background-color: rgb(140, 140, 140);
 }
 
-.history{
+.history-container{
     margin-top: 5vh;
-    width: 38vh;
-    height: 6vh;
+    width: 46vh;
+    max-height: 66vh;
     padding: 1vh;
     border-radius: 10px;
     background-color: rgb(140, 169, 144);
     display: flex;
-    align-items: center;
+    flex-direction: column;
+    align-items: end;
     font-size: 50px;
     font-family: digital-7;
     color: rgb(33, 30, 30);
+}
+
+.history {
+    display: flex; 
+    justify-content: space-between;
+    align-items: center; 
+    padding: 1vh;
+    background-color: rgb(184, 210, 188); 
+    font-size: 35px;
+    border-radius: 1vh;
+    margin-bottom: 0.5vh;
+    margin-top: 0.5vh;
+    width: 44vh;
+    color: rgb(33, 30, 30);
+}
+
+.history .button {
+    margin-left: 3vh;
+    padding: 1vh;
+    border-radius: 1vh;
+    background-color: rgb(166, 179, 168);
+    text-align: center;
+    width: 5vh;
+    height: 3vh;
+    cursor: pointer;
+}
+
+.history .button:hover {
+    background-color: rgb(178, 176, 176);
 }
