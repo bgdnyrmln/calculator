@@ -16,23 +16,19 @@ function calculate() {
 
     var result = eval(screen); // calculating all the bells and whistles
 
-
     var newHistoryItem = document.createElement("div");
     newHistoryItem.className = "history"; 
-    var historycontainer = document.getElementById("history-container")
+    
+    var historycontainer = document.getElementById("history-container");
     historycontainer.style.display = 'flex';
     historycontainer.style.padding = '1vh'; // some design correcting
     newHistoryItem.innerHTML = screen + " = " + result;  // making the history element
 
-
-
     var newHistoryButton = document.createElement("div");
     newHistoryButton.innerHTML = "AC";
     newHistoryButton.className = "button"; // creating ac button for every element
-    
 
     var historyContainer = document.querySelector(".history-container");
-
 
     var historyclearbutton = document.createElement("div");
     historyclearbutton.innerHTML = "Clear";
@@ -63,16 +59,13 @@ function calculate() {
         historyContainer.appendChild(historyclearbutton); // creates clear all button
     }
 
-
+    // Append the new history item
     newHistoryItem.appendChild(newHistoryButton); // adds ac button to every history element
     historyContainer.appendChild(newHistoryItem); // adds the history element to screen
-    
-
 
     document.getElementById("screen").innerHTML = result; // updates the screen
-
-
 }
+
 
 
 // operator adding to the screen
